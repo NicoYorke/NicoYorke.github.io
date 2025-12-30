@@ -90,13 +90,17 @@ footer {
 
 /* Bannière en haut de page */
 .site-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 40px 20px;
-  background: linear-gradient(90deg, #e74c3c, #c0392b); /* rouge dégradé */
+  z-index: 1000;
+  padding: 20px;
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
   color: white;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
 
 .site-banner h1 {
   margin-bottom: 10px;
