@@ -52,6 +52,43 @@ footer {
   transform-origin: center center;
 }
 
+/* Conteneur centré sur la page */
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centre horizontalement */
+  justify-content: center; /* centre verticalement */
+  height: 100vh;         /* prend toute la hauteur de la fenêtre */
+  text-align: center;
+  gap: 20px;             /* espace entre le bouton et le texte */
+  font-family: Arial, sans-serif;
+}
+
+/* Bouton rouge */
+#btn {
+  background-color: #e74c3c; /* rouge vif */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+/* Effet hover léger */
+#btn:hover {
+  transform: scale(1.05);
+}
+
+/* Texte du compteur */
+#count {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+
 /* Animation */
 @keyframes zoomInOut {
   0% {
