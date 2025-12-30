@@ -50,6 +50,15 @@ onSnapshot(counterRef, (docSnap) => {
 // 7️⃣ Gestion du clic
 // ------------------------
 btn.addEventListener("click", async () => {
+
+  // 🔊 Jouer un son aléatoire
+  const sounds = ["dog.mp3", "cat.mp3"];
+  const randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+  const audio = new Audio(randomSound);
+  audio.volume = 0.5;  // optionnel, régler le volume
+  audio.play();
+
+  
   const snap = await getDoc(counterRef);
   const value = snap.data().value + 1;
   await updateDoc(counterRef, { value });
