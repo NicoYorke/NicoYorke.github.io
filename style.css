@@ -58,7 +58,7 @@ footer {
   flex-direction: column;
   align-items: center;   /* centre horizontalement */
   justify-content: center; /* centre verticalement */
-  height: 100vh;         /* prend toute la hauteur de la fenêtre */
+  height: 20vh;         /* prend toute la hauteur de la fenêtre */
   text-align: center;
   gap: 20px;             /* espace entre le bouton et le texte */
   font-family: Arial, sans-serif;
