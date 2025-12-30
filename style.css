@@ -88,6 +88,26 @@ footer {
   color: #333;
 }
 
+/* Bannière en haut de page */
+.site-banner {
+  width: 100%;
+  padding: 40px 20px;
+  background: linear-gradient(90deg, #e74c3c, #c0392b); /* rouge dégradé */
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.site-banner h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.site-banner p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
 
 /* Animation */
 @keyframes zoomInOut {
